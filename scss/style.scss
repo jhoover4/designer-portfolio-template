@@ -44,6 +44,11 @@ body {
   width: 75%;
   margin: 0 0 5rem 25%;
   padding: 0 3rem;
+  p,
+  h1,
+  .blockquote {
+    transition: transform .6s cubic-bezier(.07,.7,.56,.96);
+  }
   p {
     z-index: 2;
     line-height: 30px;
@@ -95,6 +100,7 @@ body {
 
 .end-img {
   margin-left: 30rem;
+  z-index: 1;
   // float: right;
   // &::after {
   //   content: "";
@@ -146,7 +152,7 @@ footer {
         width: 100%;
       }
     .after-input {
-      display: none;
+      opacity: 0;
       margin-top: .5rem;
       font-family: 'Space Mono', monospace;
       font-size: .75rem;
