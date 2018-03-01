@@ -44,6 +44,11 @@ body {
   width: 75%;
   margin: 0 0 5rem 25%;
   padding: 0 3rem;
+  p,
+  h1,
+  .blockquote {
+    transition: transform .6s cubic-bezier(.25,-0.43,.18,1.13);
+  }
   p {
     z-index: 2;
     line-height: 30px;
@@ -95,6 +100,7 @@ body {
 
 .end-img {
   margin-left: 30rem;
+  z-index: 1;
   // float: right;
   // &::after {
   //   content: "";
@@ -135,10 +141,18 @@ footer {
       font-size: 3rem;
       background: none;
       border: none;
-      border-bottom: 1px solid #333;
       color: #333;
     }
+    .border-bar {
+        width: 0px;
+        border-top: 1px solid #333;
+        transition: width .6s ease-in-out .4s;
+      }
+      .border-bar-activate {
+        width: 100%;
+      }
     .after-input {
+      opacity: 0;
       margin-top: .5rem;
       font-family: 'Space Mono', monospace;
       font-size: .75rem;
