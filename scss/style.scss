@@ -163,6 +163,10 @@ footer {
     color: #e42929;
     text-align: center;
     margin: 3rem auto;
+    a {
+      color: #e42929;
+      text-decoration: underline;
+    }
   }
   @media (max-width: 1000px){
     .learn-more {
