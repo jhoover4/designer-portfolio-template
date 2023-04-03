@@ -56,15 +56,7 @@ $( document ).ready(function() {
         translate = 0;
     }
 
-    // if ($(window).scrollTop() <= 300) {
-    //   translate = 0;
-    // } else {
-    //   translate = Math.floor($(window).scrollTop() - 300).toString();
-    //   translate = translate.replace(/^0?$/, '');
-    //   translate = parseInt(translate);
-    // };
 
-    console.log(translate);
     $homepage_text.css({transform: "translateY(" + translate + "px)"});
     $homepage_header.css({transform: "translateY(" + translate + "px)"});
     $homepage_blockquote.css({transform: "translateY(" + translate + "px)"});
