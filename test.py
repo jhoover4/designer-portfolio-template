@@ -13,7 +13,12 @@ class TestApp(unittest.TestCase):
         self.assertEqual(url.status_code, 200)
 
     def test_portfolio(self):
-        url = self.app.get('/work')
+        url = self.app.get('/portfolio')
+        self.assertTrue(url.data)
+        self.assertEqual(url.status_code, 200)
+
+    def test_about(self):
+        url = self.app.get('/about')
         self.assertTrue(url.data)
         self.assertEqual(url.status_code, 200)
 
